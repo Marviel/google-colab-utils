@@ -26,7 +26,7 @@ setup(
     platforms=["any"],
     packages=find_packages(),
     include_package_data=True,
-    setup_requires=setup_requires,
+    setup_requires=[], #setup_requires,
     tests_require=['pytest'],
     #test_suite="",
     install_requires=[],
