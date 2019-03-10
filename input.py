@@ -3,6 +3,13 @@ from google.colab.output import eval_js
 from base64 import b64decode
 
 def take_photo(filename='photo.jpg', quality=0.8):
+  """
+  Used to take a snapshot in a .ipynb cell.
+  If something goes wrong, an error will be thrown.
+  If all goes well, data will be stored at `filename`.
+   
+  (orig src: https://colab.research.google.com/drive/1rcK1-0EWKqCWXytAa44ONF_-OrL9kjOr#scrollTo=SucxddsPhOmj)
+  """
   js = Javascript('''
     async function takePhoto(quality) {
       const div = document.createElement('div');
